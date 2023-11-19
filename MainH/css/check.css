@@ -228,3 +228,18 @@ body{
     .bg-primary-solid, .primary-overlay-solid[data-overlay-dark]:before {
         background: #292dc2;
     }
+
+    /* เลือก .product-img เพื่อกำหนดคุณสมบัติต่าง ๆ ของ div ที่ครอบรูปภาพ */
+.product-img {
+    width: 300px; /* กำหนดความกว้างของ div */
+    height: 200px; /* กำหนดความสูงของ div */
+    border: 1px solid #ccc; /* เส้นขอบสีเทา */
+    overflow: hidden; /* ซ่อนส่วนที่เกินของภาพ */
+}
+
+/* เลือก img ภายใน .product-img เพื่อปรับแต่งรูปภาพ */
+.product-img img {
+    width: 100%; /* ขยายภาพให้เต็มพื้นที่ของ div */
+    height: 100%; /* ขยายภาพให้เต็มพื้นที่ของ div */
+    object-fit: cover; /* ปรับขนาดภาพให้เต็มพื้นที่และคงสัดส่วน */
+}
